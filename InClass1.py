@@ -1,12 +1,13 @@
 """
 John Widner
 06-05-18
-
 """
 
+import math  # importing math library for Quotient and Remainder
 from random import randint  # importing random number library for the guessing game
 
 """
+Problem 2a
 Reverse Your Name
 """
 # user input of first name
@@ -15,10 +16,23 @@ firstName = input("What is your First Name?: ")
 lastName = input("What is your Last Name?: ")
 # outputs the entered name backwards
 print("Your name backward is " + firstName[::-1] + " " + lastName[::-1])
+
 """
-END of Reverse Your Name
+Problem 2b
+Quotient and Remainder
 """
+
+print("Welcome! I can divide integers for you.")
+x = int(input("Enter the first number: "))
+y = int(input("Enter the number to divide the first by: "))
+
+quotient = int(x / y)
+remainder = int(x % y)
+
+print("The Answer is "+str(quotient)+" with a remainder of "+str(remainder))
+
 """
+Problem 3
 Guessing Game
 """
 # Welcomes the user
